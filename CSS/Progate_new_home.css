@@ -1,0 +1,211 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+header{
+  background-color: rgba(34, 49, 52, 0.9);
+  position:fixed;
+  top:0;
+  width:100%;
+  height: 70px;
+  z-index:10;
+  
+}
+
+.header-left{
+  float: left;
+}
+
+.header-left img{
+  width: 124px;
+  margin: 20px 35px 0 40px;
+ 
+}
+.login-logo {
+  float: right;
+   background-color:rgba(255, 255, 255, 0.3);
+   transition: all 0.5s;
+  margin-right: 50px;
+}
+
+.login-logo  a{
+ padding: 23px;
+  display:block;
+   color: white;
+}
+
+/*aタグの方に直接background-colorでもあり。その場合hoverするのはlogin-logoのaだということに注意
+また、その場合はaの方でpaddingしないと背景色にカーソル合わせてもクリックできない。
+.login{
+  display: block;
+   background-color:rgba(255, 255, 255, 0.3);
+     padding: 20px;
+}
+*/
+.login-logo:hover{
+  background-color:rgba(255, 255, 255, 0.7);
+}
+
+
+.top-wrapper{
+  /*colorは子要素のaには反映されなかった。インライン要素には反映されないとかあるのかな??*/
+  padding: 180px 0 100px 0;
+  color:white;
+  background-image:url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  text-align:center;
+
+}
+
+.container{
+  width:1170px;
+  margin: 0 auto;
+}
+
+.top-explain{
+ opacity: 0.7;
+}
+
+.top-explain h1{
+  letter-spacing: 5px;
+   font-size: 45px;
+}
+
+.top-explain p{
+  
+   margin-bottom: 15px;
+}
+.btn{
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  opacity: 0.8;
+}
+
+.btn:hover{
+  opacity: 1.0;
+}
+
+.new-register{
+  background-color: #239b76;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.facebook{
+   background-color: #3b5998;
+   margin-right: 15px;
+   margin-top: 10px;
+   
+
+}
+
+.twitter{
+   background-color: #55acee;
+}
+
+.fa{
+  margin: 5px;
+}
+
+.contents-wrapper{
+  text-align: center;
+  height: 500px;            
+  background-color: #f7f7f7;
+  padding-top: 70px;
+}
+
+
+.contents-wrapper h2{
+  opacity: 0.5;
+  margin-bottom: 50px;
+}
+
+.lesson{
+  float: left;
+  width: 25%;
+  
+}
+
+.lesson-icon{
+  position: relative;
+}
+
+.lesson-icon p{
+  position: absolute;
+  top:90px;
+  width: 100%;
+  color: white;
+}
+
+.contents{
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 13px;            
+  color: #b3aeb5;
+  opacity: 0.8;
+  width: 80%;
+}
+
+.sub-wrapper{
+  text-align: center;
+  height: 250px;
+  padding-top: 100px;
+}
+
+.subscribe-title{
+  font-size: 25px;
+  opacity: 0.8;
+}
+.subscribe-btn{
+ margin-top: 50px;
+}
+
+.subscribe-btn a{
+  background-color: #5dca88;
+  padding: 15px 35px;
+  color: white;
+  opacity: 0.8;
+  box-shadow: 0 10px #1a7940;
+}
+
+.subscribe-btn a:active{
+  box-shadow: none;
+  position: relative;
+  top: 10px;
+}
+
+.footer-left{
+  border-top: 1px solid #eee;
+  padding-left: 55px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.footer-left img{
+  width: 124px;
+}
+
+.footer-left p{
+  font-size: 12px;
+  opacity: 0.6;
+}

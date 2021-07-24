@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"初めてのスライダー"</title>
+    <!--jqueryのスライダーのスタイルシートを使用する-->
+    <link rel="stylesheet" href="lib/jquery.bxslider.css">
+    <!--ネット上のjQueryにアクセス-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--jqueryのスライダーを使用する-->
+    <script src="js/jquery.bxslider.min.js"></script>
+
+</head>
+<body>
+    <ul class="slider">
+        <li><img src="images/apex1.jpg" /></li>
+        <li><img src="images/apex2.jpg" /></li>
+        <li><img src="images/apex3.jpg" /></li> 
+    </ul>
+    <!--ここからスライダークラスのものをjqueryのスライダーで処理していく(ブラウザ側で動的処理)--> 
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+    </script>
+</body>
+</html>
+        
